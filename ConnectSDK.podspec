@@ -111,8 +111,8 @@ Pod::Spec.new do |s|
     sp.exclude_files = "#{cast_dir}/*Tests/**/*"
     sp.private_header_files = "#{cast_dir}/**/*_Private.h"
 
-    cast_version = "2.7.1"
-    sp.dependency "google-cast-sdk", cast_version
+    cast_version = "4.5.1"
+    sp.dependency "google-cast-sdk-no-bluetooth", cast_version
     sp.framework = "GoogleCast"
     sp.xcconfig = {
         "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/google-cast-sdk/GoogleCastSDK-#{cast_version}-Release",
